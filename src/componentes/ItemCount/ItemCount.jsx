@@ -25,9 +25,9 @@ export const ItemCount = ({initial,stock,onAdd}) => {
     <div className='counter'>
         <button disabled={count <= 1} onClick={handleClickResta}>-</button>
         <span>{count}</span>
-        <button  disabled={count >= stock} onClick={handleClickSuma}>+</button>
+        <button  disabled={count >= stock} onClick={handleClickSuma} >+</button>
         <div>
-            <button disabled={stock <= 0} onClick={ ()=> onAdd(count)}>Agregar al carrito</button>
+            <button disabled={stock <= 0} onClick={ ()=> onAdd(count)} className="button is-success is-light">Agregar al carrito</button>
         </div>
       
     </div>

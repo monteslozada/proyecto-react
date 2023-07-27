@@ -20,3 +20,4 @@ const ItemCart = ({ product }) => {
 }
 
 export default ItemCart;
+

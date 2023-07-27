@@ -27,10 +27,7 @@ const handleClick = () => {
   addDoc( ordersCollection, order)
   .then(({ id }) => console.log(id))
 
-}
-
-
-
+};
 
   if (cart.length === 0) {
     return (
@@ -39,7 +36,7 @@ const handleClick = () => {
         <Link to='/'>hacer compra</Link>
       </div>
     );
-  }
+  };
 
   return (
   <div className='marginCart'>

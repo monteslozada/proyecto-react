@@ -8,13 +8,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Cart from "./componentes/Cart/Cart";
 import React from 'react';
 import CartProvider from "./context/CartContext";
-
-
+import Checkout from "./componentes/checkoutForm/checkout"
+import "bulma/css/bulma.css"
 
 
 function App() {
   return (
-    <>
+    <section>
       <BrowserRouter>
         <CartProvider>
         <NavBar />
@@ -23,11 +23,11 @@ function App() {
             <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
             <Route path="/category/Cart" element={<Cart />} />
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
-    
+            <Route path="/checkout/:orderId" element={<Checkout />} />
           </Routes>
         </CartProvider>
-      </BrowserRouter>
-    </>
+      </BrowserRouter>     
+    </section>
   )
 
 }

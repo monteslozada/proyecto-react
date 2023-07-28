@@ -4,7 +4,7 @@ import './ItenListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 import {getFirestore, collection, getDocs,query, where} from 'firebase/firestore'
-
+import "bulma/css/bulma.css"
 
 export const ItemListContainer = ({ texto }) => {
   const [data, setData] = useState([]);
@@ -32,10 +32,13 @@ export const ItemListContainer = ({ texto }) => {
 
 
   return (
-   <div className='margin-menu'>
+    
+ <div className='principal' >
      <Title name={texto} />  
     <ItemList data={data}/>
-   </div>
+    </div>
+  
+ 
     
   
   )

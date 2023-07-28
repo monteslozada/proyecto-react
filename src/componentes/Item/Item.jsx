@@ -5,10 +5,13 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ info }) => {
   return (
-    <Link to={`/detalle/${info.id}`} className='film'>
+    <div className='film'> 
+ <Link to={`/detalle/${info.id}`} className='film'>
       <img src={info.imagen} alt='' />
       <p>{info.name}</p>
     </Link>
+    </div>
+   
   )
 }
 

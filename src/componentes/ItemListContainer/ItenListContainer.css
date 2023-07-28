@@ -1,3 +1,9 @@
-.margin-menu{
-    margin: 50px;
+.principal {
+    width: 100%;
+background: linear-gradient(80deg, #070707,#102de9);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    display: flex;
+
 }
